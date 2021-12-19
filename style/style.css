@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Lobster", cursive;
+}
+
+.container {
+  width: 1170px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 10px;
+  width: 170px;
+  max-height: 50px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #3c3c3d;
+  border-radius: 5px;
+  border: 1px solid #9a9d9ec4;
+  background: #f0f5f5;
+  cursor: pointer;
+  position: relative;
+}
+
+.btn:hover {
+  border: 1px solid #6d6e6ec4;
+  background: #e3e4e4;
+}
+
+.btn:active {
+  border: 1px solid #818181a8;
+  background: #cccecfd7;
+  top: 2px;
+}
+
+.wrapper {
+  height: 100vh;
+  padding: 30px;
+}
+
+.wrapper .container {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 200px 1fr 40px;
+      grid-template-rows: 200px 1fr 40px;
+  row-gap: 20px;
+}
+
+.wrapper__form {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  row-gap: 10px;
+  background: rgba(47, 62, 66, 0.116);
+  border-radius: 15px;
+  border: 4px solid rgba(73, 92, 97, 0.616);
+}
+
+.wrapper__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.wrapper .label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 5px;
+  font-size: 16px;
+  color: #3c3c3d;
+}
+
+.wrapper .input {
+  width: 200px;
+  font-size: 14px;
+  color: #3c3c3d;
+  padding: 6px 0 4px 10px;
+  border: 1px solid #9a9d9ec4;
+  background: #feffff;
+  border-radius: 8px;
+}
+
+.wrapper .input:focus {
+  outline: none;
+}
+
+.wrapper__table {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  background: rgba(47, 62, 66, 0.116);
+  border-radius: 15px;
+  border: 4px solid rgba(73, 92, 97, 0.616);
+}
+
+.wrapper td,
+.wrapper th {
+  height: 30px;
+  padding: 3px;
+  border: 1px solid rgba(73, 92, 97, 0.616);
+  color: #3c3c3d;
+}
+
+.wrapper__caption {
+  font-size: 18px;
+  text-align: left;
+  color: #3c3c3d;
+}
+
+.wrapper__thead {
+  height: 30px;
+}
+
+.wrapper .arrows {
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.wrapper .input-sort {
+  display: none;
+}
+
+.wrapper .input-sort + .arrows:after {
+  content: " ";
+  position: absolute;
+  left: 10px;
+  bottom: -12px;
+  border: 10px solid transparent;
+  border-top: 10px solid rgba(132, 137, 139, 0.719);
+  border-width: 10px 5px;
+}
+
+.wrapper .input-sort + .arrows:before {
+  content: " ";
+  position: absolute;
+  left: 10px;
+  bottom: 12px;
+  border: 10px solid transparent;
+  border-bottom: 10px solid rgba(132, 137, 139, 0.719);
+  border-width: 10px 5px;
+}
+
+.wrapper ._down + .arrows:after {
+  content: " ";
+  position: absolute;
+  left: 10px;
+  bottom: -12px;
+  border: 10px solid transparent;
+  border-top: 10px solid rgba(27, 39, 43, 0.616);
+  border-width: 10px 5px;
+}
+
+.wrapper ._up + .arrows:before {
+  content: " ";
+  position: absolute;
+  left: 10px;
+  bottom: 12px;
+  border: 10px solid transparent;
+  border-bottom: 10px solid rgba(27, 39, 43, 0.616);
+  border-width: 10px 5px;
+}
+
+.wrapper__footer {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 100px;
+          column-gap: 100px;
+}
+/*# sourceMappingURL=style.css.map */

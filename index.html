@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="wrapper">
+      <div class="container">
+        <form class="wrapper__form" id="form" action="">
+          <div class="wrapper__user">
+            <label for="inputName" class="label">
+              Имя:
+              <input type="text" id="inputName" class="input" required />
+            </label>
+            <label for="inputDateBirth" class="label">
+              Дата рождения:
+              <input type="text" id="inputDateBirth" class="input" />
+            </label>
+            <label for="inputEmploymentDate" class="label">
+              Дата приема на работу:
+              <input
+                type="date"
+                name=""
+                id="inputEmploymentDate"
+                class="input"
+              />
+            </label>
+            <label for="inputSalary" class="label">
+              ЗП:
+              <input type="text" id="inputSalary" class="input" />
+            </label>
+          </div>
+          <button class="wrapper__btn btn" type="submit" id="btnAddEmployee">
+            Добавить сотрудника
+          </button>
+        </form>
+
+        <table class="wrapper__table" id="table">
+          <caption class="wrapper__caption">
+            Количество сотрудников:
+            <span id="captionCountEmployee"></span>
+          </caption>
+          <caption class="wrapper__caption">
+            Сумма $:
+            <span id="captionSalary"></span>
+          </caption>
+          <thead class="wrapper__thead">
+            <tr>
+              <th></th>
+              <th>Имя</th>
+              <th id="sortDateBirth">
+                Год рождения
+                <input
+                  class="input-sort"
+                  type="checkbox"
+                  id="sortInputDateBirth"
+                />
+                <label for="sortInputDateBirth" class="arrows"></label>
+              </th>
+              <th>
+                Дата приема на работу
+                <input
+                  class="input-sort"
+                  type="checkbox"
+                  id="sortInputEmploymentDate"
+                />
+                <label for="sortInputEmploymentDate" class="arrows"></label>
+              </th>
+              <th>$</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+
+        <section class="wrapper__footer footer">
+          <button class="wrapper__btn btn" type="submit" id="btnDeleteEmployee">
+            Уволить
+          </button>
+          <button class="wrapper__btn btn" type="submit" id="btnSalaryAmount">
+            Сумма $
+          </button>
+        </section>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
